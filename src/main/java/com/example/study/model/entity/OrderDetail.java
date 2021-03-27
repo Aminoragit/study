@@ -37,12 +37,12 @@ public class OrderDetail {
 
 //    //N:1
 //    //자신은 N 유저는 1이다 이떄는
-//    @ManyToOne
-//    private User user;
-//    //private Long user_id;가 위에처럼 변경된거임
-//
-//    @ManyToOne
-//    private Item item;
+    @ManyToOne
+    private User user;
+    //private Long user_id;가 위에처럼 변경된거임
+
+    @ManyToOne
+    private Item item;
 
 }
 

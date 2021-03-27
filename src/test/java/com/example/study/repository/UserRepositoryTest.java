@@ -30,8 +30,7 @@ public class UserRepositoryTest extends StudyApplicationTests {
     @Test
     @Transactional
     public void read(){
-        // select * from user where id= ?
-        Optional<User> user = userRepository.findByAccount("TestUser01");
+        Optional<User> user = userRepository.findById(1L);
 
         user.ifPresent(selectUser ->{
 
